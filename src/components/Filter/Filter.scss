@@ -1,0 +1,48 @@
+$on-mobile: "max-width: 767px";
+$blue: #1666c2;
+
+.filter-wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  padding: 1rem 1.5rem !important;
+  border-right: 1px solid #e8e8e8;
+
+  input{
+    margin-block: 1rem;
+  }
+  select{
+    color: #656565;
+    padding-block: .25rem;
+    margin-bottom: 1rem;
+  }
+  button{
+    padding: .15rem 2rem;
+    background-color: $blue;
+    border-color: $blue;
+  }
+  @media screen and ($on-mobile){
+    border-right: unset;
+    justify-content: center;
+    padding: 1rem 2rem !important;
+    position: relative;
+    animation-name: filterEfect;
+    animation-duration: .5s;
+    background-color: white;
+    @keyframes filterEfect {
+      0%   {opacity: 0}
+      25%  {opacity: 0.2}
+      50%  {opacity: 0.4}
+      75%  {opacity: 0.6}
+      100% {opacity: 1}
+    }
+    .close-icon{
+      font-size: 20px;
+      font-weight: 600;
+      position: absolute;
+      top: 0;
+      right: 2rem;
+    }
+    }
+}

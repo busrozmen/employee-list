@@ -1,0 +1,63 @@
+.error-message {
+  text-align: left;
+  padding: 3rem 1rem;
+}
+
+.employee-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.employee-card img {
+  width: 150px;
+}
+
+.employee-card .info-wrapper {
+  text-align: left;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .error-message {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  .list-wrapper {
+    background-color: #ffffff;
+  }
+  .list-wrapper .employee-card img {
+    width: 100px;
+    height: 100px;
+  }
+  .list-wrapper .employee-card .info-wrapper {
+    padding: 0 1rem;
+  }
+  .list-wrapper .employee-card .info-wrapper h4 {
+    font-size: 16px;
+  }
+  .list-wrapper .employee-card .info-wrapper h6 {
+    font-size: 13px;
+  }
+  .filter-btn {
+    background-color: #ffffff;
+    text-align: left;
+    padding-inline: 1rem;
+  }
+  .filter-btn hr {
+    margin: 0;
+    opacity: 0.15;
+  }
+  .filter-btn button {
+    border-color: #ffffff;
+    color: #1666c2;
+  }
+  .filter-btn button:active, .filter-btn button:focus, .filter-btn button:hover {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    color: #1666c2;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=Employees.css.map */

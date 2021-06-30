@@ -1,0 +1,87 @@
+.filter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 0;
+  padding: 1rem 1.5rem !important;
+  border-right: 1px solid #e8e8e8;
+}
+
+.filter-wrapper input {
+  margin-block: 1rem;
+}
+
+.filter-wrapper select {
+  color: #656565;
+  padding-block: .25rem;
+  margin-bottom: 1rem;
+}
+
+.filter-wrapper button {
+  padding: .15rem 2rem;
+  background-color: #1666c2;
+  border-color: #1666c2;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-wrapper {
+    border-right: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 2rem !important;
+    position: relative;
+    -webkit-animation-name: filterEfect;
+            animation-name: filterEfect;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    background-color: white;
+  }
+  @-webkit-keyframes filterEfect {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    75% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes filterEfect {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    75% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .filter-wrapper .close-icon {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+  }
+}
+/*# sourceMappingURL=Filter.css.map */

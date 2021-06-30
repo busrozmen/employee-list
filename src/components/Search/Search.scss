@@ -1,0 +1,38 @@
+$on-mobile: "max-width: 767px";
+$blue: #1666c2;
+
+.search-wrapper{
+  padding-block: 1rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  input{
+    margin-inline: .5rem 1rem;
+  }
+  select{
+    color: #656565;
+    padding-block: .25rem;
+    margin-right: 1rem;
+  }
+  button{
+    padding: .15rem 2rem;
+    background-color: $blue;
+    border-color: $blue;
+  }
+  @media screen and ($on-mobile){
+    flex-direction: column;
+    padding: .5rem 1rem 2rem;
+    input, select, button{
+      width: 100%;
+    }
+    input{
+      margin: .5rem 0;
+    }
+    select{
+      margin: .5rem 0 0;
+    }
+    button{
+      margin: 1rem 0 0;
+    }
+  }
+}

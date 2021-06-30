@@ -1,0 +1,58 @@
+$on-mobile: "max-width: 767px";
+.error-message{
+  text-align: left;
+  padding: 3rem 1rem;
+}
+.employee-card{
+  display: flex;
+  img{
+    width: 150px;
+  }
+  .info-wrapper{
+    text-align: left;
+    padding: 1rem;
+  }
+}
+@media screen and ($on-mobile){
+  .error-message{
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  .list-wrapper{
+    background-color: #ffffff;
+    .employee-card{
+      img{
+        width: 100px;
+        height: 100px;
+      }
+      .info-wrapper{
+        padding: 0 1rem;
+        h4{
+          font-size: 16px;
+        }
+        h6{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .filter-btn{
+    background-color: #ffffff;
+    text-align: left;
+    padding-inline: 1rem;
+    hr{
+      margin: 0;
+      opacity: 0.15;
+    }
+    button{
+      border-color: #ffffff;
+      color: #1666c2;
+      &:active, &:focus, &:hover{
+        box-shadow: unset;
+        color: #1666c2;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}

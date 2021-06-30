@@ -1,0 +1,9 @@
+$on-mobile: "max-width: 767px";
+.navbar{
+  background-color: #1666c2;
+  padding: 1.5rem !important;
+
+  @media screen and ($on-mobile){
+    padding: 1rem !important;
+  }
+}
