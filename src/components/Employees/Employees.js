@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch} from "react-redux"
-import notFound from '../../assets/notfound.png'
+import person from '../../assets/person.png'
 import filterIcon from '../../assets/filter.svg'
 import { mobileFilterShow } from '../../actions/filterActions';
 import './Employees.css'
@@ -44,7 +44,7 @@ const Employees = () => {
       {
         items.map((employee,index)=>(
           <div className='employee-card p-3' key={index}>
-            <img src={employee.photo ? employee.photo : notFound} alt='employee'/>
+            <img src={person} alt='employee'/>
             <div className='info-wrapper'>
               <h4>{ employee.name }</h4>
               <h6>{ employee.company }</h6>
